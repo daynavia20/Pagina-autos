@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/Elementos/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Elementos pagina</title>
+    <head>
+      <style>
+        @media (max-width: 576px) {
+          .navbar-brand img {
+            width: 50px;
+            height: auto;
+          }
+          .navbar-brand {
+            font-size: 0.9rem;
+          }
+        }
+      </style>
+    </head>    
 </head>
 <body>
   <header class="bg-dark text-white">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-5 text-white" href="#">
-        <img src="https://th.bing.com/th/id/R.57c56fa598881c76ce01aa4b484c2dc1?rik=mfc9gMH%2bIJy7wA&pid=ImgRaw&r=0" alt="Logo" width="70" height="30" class="d-inline-block align-text-top">
-        Bienvenido a mi blog de autos deportivos
-      </a>      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav nav-tabs ms-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" aria-current="page" href="#">Modelos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Coches</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Catálogo</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-5 text-white text-truncate" href="#">
+          <img src="https://th.bing.com/th/id/R.57c56fa598881c76ce01aa4b484c2dc1?rik=mfc9gMH%2bIJy7wA&pid=ImgRaw&r=0" alt="Logo" width="70" height="30" class="d-inline-block align-text-top">
+          Bienvenido a fast cars
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#">Modelos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Coches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Catálogo</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
     <main class="container my-5">
       <section>
         <h1 class="display-2" style="text-align: center; margin-top: 50px;">Fast cars</h1>
@@ -92,14 +104,14 @@
           <h1>Quieres saber mas de nosotros</h1>
           <h2 class="diplay-4">Registrate aqui</h2>
           <form class="row g-4">
-              <div class="col-md-12">
+              <div class="col-md-12 col-md-6">
                   <div class="input-group">
                       <span class="input-group-text">Nombre y apellido</span>
                       <input type="text" aria-label="First name" class="form-control" placeholder="Ingrese su nombre">
                       <input type="text" aria-label="Last name" class="form-control" placeholder="Ingrese su apellido">
                   </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12 col-md-6">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text"></div>
